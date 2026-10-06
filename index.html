@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savora — Online Food Ordering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">S</span> Savora</a>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-ghost cart-btn" href="cart.html">Cart <span class="cart-count" data-cart-count hidden>0</span></a>
+        <a class="btn btn-primary" href="restaurants.html">Order now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="kicker">Neighborhood kitchens, delivered</p>
+        <h1>Food worth opening the door for.</h1>
+        <p class="lede">Savora connects you with independently loved restaurants. Browse menus, build an order, and track delivery — a complete online food ordering experience.</p>
+        <form class="search-bar" action="restaurants.html">
+          <input name="q" placeholder="Search biryani, ramen, tacos…" aria-label="Search restaurants">
+          <button class="btn btn-primary" type="submit">Find food</button>
+        </form>
+      </div>
+      <article class="hero-card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80" alt="Plated dinner">
+        <div class="hero-card-body">
+          <span class="badge">Tonight’s pick</span>
+          <h3>Chef-led kitchens near you</h3>
+          <div class="meta"><span class="star">★ 4.8 average</span><span>30 min typical ETA</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Featured</p>
+          <h2>Popular restaurants</h2>
+        </div>
+        <a class="btn btn-ghost" href="restaurants.html">View all</a>
+      </div>
+      <div class="grid" data-featured></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">How it works</p>
+          <h2>From craving to doorstep</h2>
+        </div>
+      </div>
+      <div class="how">
+        <article><span>01</span><h3>Choose a kitchen</h3><p>Filter by cuisine, rating, and delivery time.</p></article>
+        <article><span>02</span><h3>Build your order</h3><p>Add dishes, adjust quantities, and review GST and delivery.</p></article>
+        <article><span>03</span><h3>Checkout & track</h3><p>Pay on delivery or UPI, then follow kitchen and rider status.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Savora · Online food ordering system</span>
+      <span>Demo storefront · Prices in INR</span>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Savora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">S</span> Savora</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container section">
+    <p class="kicker">Checkout</p>
+    <h2>Delivery details</h2>
+    <div class="checkout-grid" style="margin-top:22px">
+      <form class="form" data-checkout>
+        <label>Full name <input name="name" required placeholder="Your name"></label>
+        <label>Phone <input name="phone" required type="tel" placeholder="10-digit mobile"></label>
+        <label>Address <textarea name="address" required rows="3" placeholder="House, street, landmark"></textarea></label>
+        <label>City
+          <select name="city" required>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Bengaluru</option>
+            <option>Hyderabad</option>
+            <option>Pune</option>
+          </select>
+        </label>
+        <label>Payment
+          <select name="payment" required>
+            <option>UPI</option>
+            <option>Card on delivery</option>
+            <option>Cash on delivery</option>
+          </select>
+        </label>
+        <button class="btn btn-primary" type="submit">Place order</button>
+      </form>
+      <aside class="cart-panel" data-summary></aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner"><span>© 2026 Savora</span></div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
